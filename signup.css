@@ -1,0 +1,149 @@
+body{
+    margin: auto 0;
+    padding:0;
+    width:100%;
+    background-color:#EFF2FB;
+}
+.header{
+    width:100%;
+    height:80px;
+    background-color:#58d;
+    color:white;
+    margin:0;
+    padding:0;
+    padding-left:10px;
+    font-size:35px;
+    font-family:arial black;
+    position:relative;
+}
+ul{
+    height:50px;
+    list-style:none;
+    margin:0;
+}
+li{
+    height:50px;
+    display:inline;
+}
+.header-left{
+    float:left;
+    height:60px;
+    margin-left:20px;
+    font-size: 55px;
+}
+.header-right{
+    float:right;
+    margin-right:40px;
+}
+.username_or_mail, .password, .login{
+    border-radius: 5px;
+    padding:5px;
+}
+.remember{
+    font-size:15px;
+    font-family:arial;
+    font-weight:normal;
+    color:white;
+}
+.explain{
+    color:black;
+    font-weight:bold;
+    font-size:18px;
+}
+.main{
+    clear:both;
+    margin-top:50px;
+    overflow:hidden;
+    /*background-color: #E0ECF8;*/
+}
+.account{
+     /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*height: 100%;*/
+    padding: 10px;
+    margin: 50px ;
+    margin-top: 0;
+    width: 340px;
+    float:left;
+    width:25%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+.gender{
+    text-align:center;
+    color:#A4A4A4;
+}
+.picture{
+    text-align:center;
+    margin-top:10px;
+}
+.picture-button{
+    border-radius:5px;
+}
+.account h1{
+     text-align: center;
+    font-size: 175%;
+    font-weight: 300;
+}
+h1, input {
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+.input {
+    width: 75%;
+    height: 50px;
+    display: block;
+    margin: 0 auto 15px;
+    padding: 0 15px;
+    border: none;
+    border-bottom: 2px solid #ebebeb;
+}
+.input:focus {
+    outline: none;
+    border-bottom-color: #3CC !important;
+}
+.input:hover {
+    border-bottom-color: #dcdcdc;
+}
+.input:invalid {
+    box-shadow: none;
+}
+.inputButton {
+    position: relative;
+    width: 85%;
+    height: 50px;
+    display: block;
+    margin: 30px auto 30px;
+    color: white;
+    background-color: #3CC;
+    border: none;
+    -webkit-box-shadow: 0 5px 0 #2CADAD;
+    -moz-box-shadow: 0 5px 0 #2CADAD;
+    box-shadow: 0 5px 0 #2CADAD;
+}
+.inputButton:hover {
+    top: 2px;
+    -webkit-box-shadow: 0 3px 0 #2CADAD;
+    -moz-box-shadow: 0 3px 0 #2CADAD;
+    box-shadow: 0 3px 0 #2CADAD;
+}
+.inputButton:active {
+    top: 5px;
+    box-shadow: none;
+}
+.inputButton:focus {
+    outline: none;
+}
+.navbar-brand{
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: cursive;
+}
+.about_me{
+    color:#58d;
+    float:left;
+    text-align:center;
+    width:65%;
+    /*background-color:#E0E6F8;*/
+}

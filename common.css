@@ -1,0 +1,251 @@
+/*navとハンバーガーメニュー*/
+.main-title{
+    margin-top:50px;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: center;
+    background-color:#58d;
+    color:white;
+    
+}
+#header {
+  position: relative;
+  z-index:10000;
+}
+
+.header_bg {
+    z-index:10000;
+  position: inherit;
+  background: #FFF;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav {
+  position: absolute;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav a {
+  /*color: #777;*/
+  font-weight: bold;
+}
+
+.nav a:hover {
+  border-bottom: 1px solid #777;
+}
+
+@media screen and (max-width: 960px) {
+  #header{
+      position:fixed;
+      top:0;
+  }
+  #header.fixed{
+    margin-top: 0;
+    top: 0;
+    padding-top: 10px;
+  }
+  .header{
+      z-index:10000;
+  }
+  .header_bg {
+    z-index: 10000;
+/*メニューが下に出てくるときにこれしとかないとメニューの背景の上を通ってびよーんと下にでてくる*/
+  }
+  .nav {
+    float: left;
+    top: -500px;
+    background: #333;
+    width: 100%;
+    margin-left: 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  .nav li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #FFF;
+  }
+  .nav a {
+    padding: 15px;
+  }
+  .toggle {
+    float: right;
+    margin-right: 10px;
+    margin-top:10px;
+  }
+  .toggle:hover{
+      cursor: pointer;
+  }
+  .toggle span {
+    display: block;
+    background: #333;
+    width: 30px;
+    height: 5px;
+    margin-bottom: 5px;
+  }
+  .open .nav {
+    transform: translateY(551px);
+    position:fixed;
+  }
+}
+/*########### ここまでがnavとハンバーガーメニューのcss #############*/
+
+/*about this siteクリックしてこのサイトの説明する文章のとこ*/
+.explain{
+    font-size:20px;
+    font-family:'Comic Sans MS';
+}
+/*featherlightの設定*/
+.feather-light{
+    display:none;
+    width:800px;
+    height:600px;
+    text-align: center;
+    padding:20px;
+}
+.featherlight{
+    z-index:50000;
+}
+.featherlight-content{
+    border-radius:15px;
+}
+.feather-light-second{
+    display:none;
+    width:700px;
+    height:700px;
+    padding:20px;
+    text-align: center;
+}
+/*metooボタン*/
+.me_too{
+    background-color:#00FF00;
+    color:white;
+    width:105px;
+    height:40px;
+    font-size:20px;
+    border-radius:10px;
+}
+.me_too_my_video{
+    background-color:#00FF00;
+    color:white;
+    width:105px;
+    height:40px;
+    font-size:20px;
+    border-radius:10px;
+}
+.you_too{
+    background-color:#FE2E64;
+    color:white;
+    width:105px;
+    height:40px;
+    font-size:20px;
+    border-radius:10px;
+}
+/*`metooボタンとwho clickedボタンかこっとるdiv*/
+.buttons{
+    display:inline;
+     overflow:hidden;
+    margin:auto 0;
+}
+
+/*投稿してもらうとこ*/
+.text{
+    margin-top: 0px;
+    margin-bottom:10px;
+    border-width:5px;
+    width:750px;
+    height:40px;
+    font-size:35px;
+}
+.class{
+    width:750px;
+    margin:auto;
+    text-align:center;
+    border-radius:10px;   
+    font-size:30px;
+    border:solid 2px #BDBDBD;
+    margin-top:20px;
+}
+.textarea{
+    width:750px;
+    height:300px;
+    margin:auto;
+    text-align: center;
+    border-radius:10px;   
+    font-size:30px;
+    border:solid 2px #BDBDBD;
+}
+.error{
+    color:red;
+    font-size:30px;
+}
+.button{
+    width:80px;
+    height:30px;
+    
+}
+.button_box{
+    text-align: center;
+}
+.button{
+    width:100px;
+    height:40px;
+    border-radius:10px;
+    font-size:25px;
+}
+.button:hover{
+    color:white;
+    background-color:#58d;
+    cursor:pointer;
+}
+.at_least_one{
+    font-size:20px;
+    color:#FA5882;
+}
+.pic{ 
+    border-radius:5px;
+}
+.title{
+    margin-top:20px;
+    width:750px;
+    text-align: center;
+    border-radius:10px;   
+    font-size:30px;
+    border:solid 2px #BDBDBD;
+}
+.share{
+    font-size: 20px;
+    font-family:arial black;
+}
+.comment_button{
+    border-radius:5px;
+    height:35px;
+}
+/*コメントみんなにかきこみしてもらったとこ*/
+.little_profile{
+    color:#848484;
+    border:black;
+}
+.share_comment{
+    text-align: left;
+    margin-bottom:10px;
+}
+/*maleとfemaleで色分け*/
+.male{
+    color:#5858FA;
+}
+.female{
+    color:#FA58F4;
+}
+/*誰がクリックしたか表示するとこ*/
+.who_clicked_profile_photo{
+    font-weight:bold;
+}
+.who_clicked_profile_photo img{
+    width:50px;
+    height:50px;
+}
